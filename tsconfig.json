@@ -1,0 +1,23 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "bundler", // ← Changez ici
+    "target": "ES2020",
+    "esModuleInterop": true,
+    "types": ["node"], // ← Ajoutez ceci
+    "lib": ["ES2020"], // ← Ajoutez ceci
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "strict": true,
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true
+  }
+}
