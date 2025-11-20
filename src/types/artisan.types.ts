@@ -33,5 +33,12 @@ export interface ApiResponse<T> {
   success: boolean;
   message?: string;
   data?: T | undefined;
+  total?: number;
   error?: string;
+}
+export interface StatsResponse {
+  total_artisans: number;
+  note_moyenne: number;
+  par_profession: Array<{ profession: string; count: string }>;
+  par_ville: Array<{ ville: string; count: string }>;
 }
