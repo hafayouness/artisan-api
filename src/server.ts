@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import pool from "./config/database.js";
 import artisanRoutes from "../src/routes/artisanRoutes.js";
 
-dotenv.config(); // ← AJOUTEZ LES PARENTHÈSES ()
+dotenv.config();
 
 const app = express();
 const PORT: number = parseInt(process.env.PORT || "3000");
@@ -31,9 +31,6 @@ app.get("/artisans", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`\n🚀 Serveur démarré !`);
   console.log(`📍 URL: http://localhost:${PORT}`);
-  console.log(`🗄️  Base: ${process.env.DB_NAME}`);
-  console.log(`\n📋 Testez :`);
   console.log(`   http://localhost:${PORT}/`);
   console.log(`   http://localhost:${PORT}/tables`);
-  console.log(`   http://localhost:${PORT}/artisans\n`);
 });
